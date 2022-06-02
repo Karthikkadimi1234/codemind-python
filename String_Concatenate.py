@@ -1,0 +1,10 @@
+n=input()
+m=input()
+a=list(n)
+b=list(m)
+a.sort()
+b.sort()
+c=a+b
+c.sort()
+d=''.join(c)
+print(d)
