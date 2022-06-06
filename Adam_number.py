@@ -1,17 +1,17 @@
 n=int(input())
-i=n*n
 rev=0
-re=0
+reve=0
+i=n*n
 while n>0:
     r=n%10
     rev=rev*10+r
     n=n//10
 c=rev*rev
 while c>0:
-    ce=c%10
-    re=re*10+ce
+    re=c%10
+    reve=reve*10+re
     c=c//10
-if i==re:
-    print("True")
+if i==reve:
+    print(True)
 else:
-    print("False")
+    print(False)
