@@ -2,8 +2,8 @@ n=int(input())
 rev=0
 c=0
 s=0
-t=n
 i=1
+t=n
 while n>0:
     re=n%10
     rev=rev*10+re
@@ -15,7 +15,7 @@ while rev>0:
     while i<=c:
         s+=r**i
         i+=1
-if(s==t):
+if s==t:
     print(True)
 else:
     print(False)
