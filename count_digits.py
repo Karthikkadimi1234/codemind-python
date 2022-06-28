@@ -1,6 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
+c=[]
 for i in a:
-    if(i<0):
+    if i<0:
         i=i*-1
-    print(len(str(i)),end=' ')
+        b=len(str(i))
+        c.append(b)
+    else:
+        b=len(str(i))
+        c.append(b)
+print(*c)
+    
