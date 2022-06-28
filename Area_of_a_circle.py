@@ -1,4 +1,3 @@
-
-a=float(input())
-area=3.14*a*a
-print('{1:.2f}'.format(a,area))
+r=int(input())
+a=3.14*r**2
+print(round(a,2))
