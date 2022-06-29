@@ -1,7 +1,7 @@
 n=int(input())
 a=list(map(int,input().split()))
-c=0
+el=0
 for i in range(n):
     if a[i]%2==0:
-        c=a[i]
-print(c)
+        e=a[i]
+print(e)
