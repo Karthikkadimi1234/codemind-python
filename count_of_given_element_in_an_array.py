@@ -1,5 +1,4 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=int(input())
-c=a.count(b)
-print(c)
+k=int(input())
+print(a.count(k))
