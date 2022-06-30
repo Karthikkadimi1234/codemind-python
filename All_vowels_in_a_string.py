@@ -1,8 +1,8 @@
 n=input()
-b=set(n)
+b='aeiou'
 c=0
 for i in b:
-    if i in 'aeiou':
+    if i in n:
         c+=1
 if c==5:
     print(True)
