@@ -3,12 +3,11 @@ a=list(map(int,input().split()))
 c=0
 for i in a:
     t=i
-    re=0
+    rev=0
     while(i>0):
         r=i%10
-        re=re*10+r
+        rev=rev*10+r
         i=i//10
-    if re==t:
+    if t==rev:
         c+=1
 print(c)
-    
