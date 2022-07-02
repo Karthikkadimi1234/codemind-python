@@ -4,9 +4,9 @@ b,c=map(int,input().split())
 d=[]
 for i in a:
     if i>=b and i<=c:
-       continue
+        continue
     else:
-       d.append(i)
+        d.append(i)
 if d==[]:
     print(-1)
 else:
