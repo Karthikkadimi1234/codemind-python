@@ -2,9 +2,9 @@ n=int(input())
 a=list(map(int,input().split()))
 b=[]
 for i in a:
-    if i==a.count(i):
+    if a.count(i)==i and i not in b:
         b.append(i)
 if b==[]:
-    print("-1")
+    print(-1)
 else:
     print(min(b),max(b),end=' ')
