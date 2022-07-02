@@ -8,6 +8,6 @@ for i in a:
     else:
         d.append(i)
 if d==[]:
-    print("-1")
+    print(-1)
 else:
     print(*d)
