@@ -3,10 +3,9 @@ a=list(map(int,input().split()))
 k=int(input())
 b=[]
 for i in a:
-    if k==a.count(i) and i not in b:
+    if a.count(i)==k and i not in b:
         b.append(i)
 if b==[]:
-    print("-1")
+    print(-1)
 else:
     print(*b)
-    
