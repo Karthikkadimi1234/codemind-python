@@ -1,7 +1,7 @@
 import math
 n=int(input())
-c=round(math.sqrt(n),2)
-if(n==c*c):
+c=int(math.sqrt(n))
+if c*c==n:
     print(True)
 else:
     print(False)
