@@ -1,6 +1,6 @@
-def gcd(x,y):
-    if x%y==0:
-        return y
-    return gcd(y,x%y)
-a,b=map(int,input().split())
-print(gcd(a,b))
+def gcd(a,b):
+    if a%b==0:
+        return b
+    return gcd(b,a%b)
+n,m=map(int,input().split())
+print(gcd(n,m))
