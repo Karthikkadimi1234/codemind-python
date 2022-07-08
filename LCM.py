@@ -1,9 +1,7 @@
-a,b=map(int,input().split())
-c=max(a,b)
+n,m=map(int,input().split())
+c=max(n,m)
 while True:
-    if c%a==0 and c%b==0:
-      print(c)
-      break
+    if c%n==0 and c%m==0:
+        print(c)
+        break
     c+=1
-  
-    
