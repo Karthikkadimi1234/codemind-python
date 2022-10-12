@@ -1,27 +1,16 @@
-def prime(n):
-    if n>1:
-        for i in range(2,int(n**0.5)+1):
-            if n%i==0:
-                return 0
-        else:
-            return 1
-        
+def ugly(n):
+    if(n==1):
+        return 1
+    if(n<=0):
+        return 0
+    if(n%2==0):
+        return ugly(n=n//2)
+    if(n%3==0):
+        return ugly(n=n//3)
+    if(n%5==0):
+        return ugly(n=n//5)
 n=int(input())
-#print(n)
-c=0
-d=[]
-for i in range(1,n//2+1):
-    if n%i==0:
-        if prime(i):
-            d.append(i)
-#print(d)
-for i in d:
-    if i<=5:
-        c=1
-    else:
-        c=0
-        break
-if c==1 or n==1:
-    print("Ugly Number")
+if(ugly(n)==1):
+    print('Ugly Number')
 else:
-    print("Not Ugly Number")
+    print('Not Ugly Number')
