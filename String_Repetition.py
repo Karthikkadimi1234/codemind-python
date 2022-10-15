@@ -9,4 +9,5 @@ v=v%len(n)
 for i in range(v):
     if n[i]=='a':
         c+=1
-print(res+c)
+
+print(c+res)
